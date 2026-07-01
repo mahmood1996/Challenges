@@ -3,13 +3,12 @@ Week Two Challenge:
 	- Show avatar related to MD5 hash of Dr. Stephane email.
 "
 Class {
-	#name : 'WeekTwoChallenge',
-	#superclass : 'Challenge',
-	#category : 'Challenges',
-	#package : 'Challenges'
+	#name : #WeekTwoChallenge,
+	#superclass : #Challenge,
+	#category : 'Challenges'
 }
 
-{ #category : 'executing' }
+{ #category : #executing }
 WeekTwoChallenge >> execute [
 	"Show avatar related to MD5 hash of Dr. Stephane email"
 	

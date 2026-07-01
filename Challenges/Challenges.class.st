@@ -4,33 +4,33 @@ Challenges
 The entry point of all Weekly Challenges.
 "
 Class {
-	#name : 'Challenges',
-	#superclass : 'Object',
+	#name : #Challenges,
+	#superclass : #Object,
 	#instVars : [
 		'challenges'
 	],
-	#category : 'Challenges',
-	#package : 'Challenges'
+	#category : #Challenges
 }
 
-{ #category : 'executing' }
+{ #category : #executing }
 Challenges >> execute [
 	"execute all available challenges"
 	
 	^ challenges do: [ :each | each execute ]
 ]
 
-{ #category : 'initialization' }
+{ #category : #initialization }
 Challenges >> initialize [
 	"preparing all challenges"
 	
 	super initialize.
 	
 	challenges := { 
-		WeekOneChallenge new . 
-		WeekTwoChallenge new . 
-		WeekThreeChallenge new . 
-		WeekFourChallenge new	
+		WeekOneChallenge new. 
+		WeekTwoChallenge new. 
+		WeekThreeChallenge new. 
+		WeekFourChallenge new.
+		WeekFiveChallenge new.
 	}
 
 	

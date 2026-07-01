@@ -3,13 +3,12 @@ Week Three Challenge
 	- Transform an image into an array of sprites and inspect it.
 "
 Class {
-	#name : 'WeekThreeChallenge',
-	#superclass : 'Challenge',
-	#category : 'Challenges',
-	#package : 'Challenges'
+	#name : #WeekThreeChallenge,
+	#superclass : #Challenge,
+	#category : 'Challenges'
 }
 
-{ #category : 'private' }
+{ #category : #private }
 WeekThreeChallenge >> allSprites [
 	"Returns all sprites with size 64 * 64"
 	
@@ -32,7 +31,7 @@ WeekThreeChallenge >> allSprites [
 
 ]
 
-{ #category : 'executing' }
+{ #category : #executing }
 WeekThreeChallenge >> execute [
 	"Inspect sprites returned from the image."
 	

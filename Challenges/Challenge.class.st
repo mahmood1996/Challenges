@@ -2,13 +2,12 @@
 Abstract class represent the shared behavior between all weekly challenges.
 "
 Class {
-	#name : 'Challenge',
-	#superclass : 'Object',
-	#category : 'Challenges',
-	#package : 'Challenges'
+	#name : #Challenge,
+	#superclass : #Object,
+	#category : 'Challenges'
 }
 
-{ #category : 'executing' }
+{ #category : #executing }
 Challenge >> execute [
 	"Method to be overridden"
 	self subclassResponsibility 

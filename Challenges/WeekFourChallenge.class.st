@@ -4,13 +4,12 @@ Week Four Challenge
 	- Show ""The Terminator"" film poster.
 "
 Class {
-	#name : 'WeekFourChallenge',
-	#superclass : 'Challenge',
-	#category : 'Challenges',
-	#package : 'Challenges'
+	#name : #WeekFourChallenge,
+	#superclass : #Challenge,
+	#category : 'Challenges'
 }
 
-{ #category : 'executing' }
+{ #category : #executing }
 WeekFourChallenge >> execute [
 	"Show capitals and film poster"
 	
@@ -19,7 +18,7 @@ WeekFourChallenge >> execute [
 	
 ]
 
-{ #category : 'private' }
+{ #category : #private }
 WeekFourChallenge >> showCapitals [
 	"Show capitals returned from api.geonames.org"
 
@@ -34,7 +33,7 @@ WeekFourChallenge >> showCapitals [
 	
 ]
 
-{ #category : 'private' }
+{ #category : #private }
 WeekFourChallenge >> showFilmPoster [
 	"Show (The Terminator) film poster"
 
