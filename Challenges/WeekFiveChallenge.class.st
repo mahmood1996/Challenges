@@ -18,16 +18,21 @@ WeekFiveChallenge >> execute [
 						binaryReadStreamDo: [ 
 							:stream | 
 							PNGReadWriter formFromStream: stream 
-						])) beSticky.
+						])) lock; yourself .
 
 	aPane := ScrollPane new.
 	aPane extent: imageMorph width @ imageMorph height.
 	aPane scroller addMorph: (PasteUpMorph new 
+		color: Color gray;
+		borderWidth: 3;
+		borderColor: Color black;
 		extent: imageMorph width @ imageMorph height;
 		backgroundMorph: imageMorph ;
-		addMorphFront: ('' asMorph 
-								extent: (20 @ 20); 
-								backgroundColor: Color orange
+		addMorph: (CircleMorph new color: Color cyan; position: 41 @ 23);
+		addMorph: (Morph new
+								extent: 20 @ 20; 
+								color: Color orange;
+								position: 370 @ 290
 							)).
 	aPane openInWindow.
 ]
