@@ -11,11 +11,13 @@ Class {
 { #category : #executing }
 WeekSixChallenge >> execute [
 	"Fetching a dictionary contains pairs whose key is description of the location and the value its latitude and longitude."
-	| apiResult finalResult |
+	| apiResult finalResult query |
+	
+	query := UIManager default request: 'Find a location for: '.
 	
 	apiResult := STON fromString: ( ZnClient new
 		url: 'https://nominatim.openstreetmap.org/search';
-		queryAt: 'q' put: 'Rue de Paris'; 
+		queryAt: 'q' put: query; 
 		queryAt: 'format' put: 'jsonv2';
 		queryAt: 'limit' put: 10;
 		get ).
