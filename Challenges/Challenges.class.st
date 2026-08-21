@@ -31,6 +31,7 @@ Challenges >> initialize [
 		WeekThreeChallenge new. 
 		WeekFourChallenge new.
 		WeekFiveChallenge new.
+		WeekSixChallenge new.
 	}
 
 	
